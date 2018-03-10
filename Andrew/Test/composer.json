@@ -1,0 +1,21 @@
+{
+  "name": "Andrew/Test",
+  "description": "Test task",
+  "license": "MIT",
+  "authors": [
+    {
+      "email": "andrew.izotov@yahoo.com",
+      "name": "Andrew Izotov"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {},
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Andrew\\Test\\": ""
+    }
+  }
+}

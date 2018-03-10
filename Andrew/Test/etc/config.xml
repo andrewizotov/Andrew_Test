@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+  ~ @category    Andrew
+  ~ @package     Andrew_Test
+  ~ @copyright   Copyright (c) 2018
+  ~ @author      Andrew Izotov @ <andrew.izotov@andrew.izotov@yahoo.com>
+  -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <extra_settings>
+            <parameters>
+                <customer_groups>0</customer_groups>
+            </parameters>
+        </extra_settings>
+    </default>
+</config>

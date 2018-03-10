@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<!--
+  ~ @category    Andrew
+  ~ @package     Andrew_Test
+  ~ @copyright   Copyright (c) 2018
+  ~ @author      Andrew Izotov @ <andrew.izotov@andrew.izotov@yahoo.com>
+  -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="andrew_test" sortOrder="-10" translate="label">
+             <label>Andrew Test</label>
+        </tab>
+        <section id="extra_settings" showInDefault="1" showInStore="0" showInWebsite="1" sortOrder="1" translate="label">
+            <class>separator-top</class>
+            <label>Group - extra settings</label>
+            <tab>andrew_test</tab>
+            <resource>Andrew_Test::extra_settings</resource>
+            <group id="parameters" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Groups Configuration</label>
+                <field id="customer_groups" translate="label" type="multiselect" sortOrder="2" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Groups</label>
+                    <source_model>Magento\Customer\Model\Customer\Source\Group</source_model>
+                    <config_path>extra_settings/andrew_test/customer_groups</config_path>
+                    <comment>Please select groups , Order for these customer groups will be set in Holder status</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
